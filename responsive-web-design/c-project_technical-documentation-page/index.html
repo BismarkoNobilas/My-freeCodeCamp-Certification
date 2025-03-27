@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Getting started with HTML</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Getting Started</header>
+        <ul>
+            <li>
+                <a href="#Introduction" class="nav-link">Introduction</a>
+            </li>
+            <li>
+                <a href="#Basic_Syntax" class="nav-link">Basic Syntax</a>
+            </li>
+            <li>
+                <a href="#Structure" class="nav-link">Structure</a>
+            </li>
+            <li>
+                <a href="#Common_HTML_Tags" class="nav-link">Common HTML Tags</a>
+            </li>
+            <li>
+                <a href="#Best_Practices" class="nav-link">Best Practices</a>
+            </li>
+            <li>
+                <a href="#Common_Mistakes" class="nav-link">Common Mistakes</a>
+            </li>
+            <li>
+                <a href="#Reference" class="nav-link">Reference</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>HTML (HyperText Markup Language) is the standard markup language used to create web pages. It structures
+                the content on the web and defines elements like headings, paragraphs, links, images, and more. HTML
+                works alongside CSS and JavaScript to build dynamic and visually appealing websites.</p>
+        </section>
+        <section class="main-section" id="Basic_Syntax">
+            <header>Basic Syntax</header>
+            <p>HTML documents consist of elements enclosed in tags. Tags are written inside angle brackets
+                <code>&lt; &gt;</code> and usually come in pairs: an opening tag <code>&lt;tag&gt;</code> and a closing
+                tag <code>&lt;/tag&gt;</code>. Some tags are self-closing.
+            </p>
+        </section>
+        <section class="main-section" id="Structure">
+            <header>Structure</header>
+            <p>standard structure of an HTML document :</p>
+            <div id="code-block">
+                <code>
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &nbsp;&nbsp;&lt;head&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br>
+                    &nbsp;&nbsp;&lt;/head&gt;<br>
+                    &nbsp;&nbsp;&lt;body&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Welcome to HTML&lt;/h1&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a simple HTML page.&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&lt;/body&gt;<br>
+                    &lt;/html&gt;
+                </code>
+            </div>
+            <br>
+        </section>
+        <section class="main-section" id="Common_HTML_Tags">
+            <header>Common HTML Tags</header>
+            <p>Document Structure</p>
+            <ul>
+                <li><code>&lt;html&gt;</code>: Root element of an HTML document.</li>
+                <li><code>&lt;head&gt;</code>: Contains metadata (title, links to CSS/JS files, etc.)</li>
+                <li><code>&lt;title&gt;</code>: Sets the title of the web page (shown in the browser tab).</li>
+                <li><code>&lt;body&gt;</code>: Contains the main content of the web page.</li>
+            </ul>
+            <p>Content Tags</p>
+            <ul>
+                <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>: Headings, where <code>&lt;h1&gt;</code> is the
+                    largest, and <code>&lt;h6&gt;</code> is the smallest.</li>
+                <li><code>&lt;p&gt;</code>: Paragraph.</li>
+                <li><code>&lt;br&gt;</code>: Line break (self-closing).</li>
+                <li><code>&lt;hr&gt;</code>: Horizontal line (self-closing).</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Best_Practices">
+            <header>Best Practices</header>
+            <ul>
+                <li>Indentation and Formatting: Use consistent indentation to make the code readable.</li>
+                <li>Comments: Add comments using <code>&lt;!-- --&gt;</code> for clarity and to explain complex
+                    sections.</li>
+                <li>Doctype Declaration: Always start with <code>&lt;!DOCTYPE html&gt;</code> to specify the HTML
+                    version.</li>
+                <li>Semantic Tags: Use semantic tags like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>,
+                    <code>&lt;article&gt;</code>, and <code>&lt;section&gt;</code> for better accessibility and SEO.
+                </li>
+                <li>Alt Text for Images: Always include descriptive <code>alt</code> attributes for images to improve
+                    accessibility.</li>
+                <li>Avoid Deprecated Tags: Avoid using outdated tags like <code>&lt;font&gt;</code> or
+                    <code>&lt;center&gt;</code>. Use CSS instead.
+                </li>
+            </ul>
+        </section>
+        <section class="main-section" id="Common_Mistakes">
+            <header>Common Mistakes</header>
+            <ul>
+                <li>
+                    <p>Missing Closing Tags: Ensure every opening tag has a corresponding closing tag (unless it’s
+                        self-closing).</p>
+                </li>
+                <li>
+                    <p>Using Inline Styles: Avoid inline CSS for styling; instead, use external or internal style
+                        sheets.</p>
+                </li>
+                <li>
+                    <p>Broken Links or Paths: Double-check <code>href</code> and <code>src</code> paths to ensure
+                        resources
+                        load correctly.</p>
+                </li>
+                <li>
+                    <p>Non-Descriptive Titles: Use meaningful <code>&lt;title&gt;</code> tags to describe your web page
+                        accurately.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <p>All the documentation in this page is taken from <a
+                    href="https://developer.mozilla.org/en-US/docs/Learn/HTML">MWD</a></p>
+        </section>
+    </main>
+</body>
+
+</html>
